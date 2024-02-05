@@ -5,6 +5,6 @@
 Операции, которые есть в sql, делятся на несколько типов: 
 
 **Операторы SQL:**
-<img src="img/img0_sql_statements.png"  width="500">
+<img src="images/img0_sql_statements.png"  width="500">
 
 
