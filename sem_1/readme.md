@@ -1,12 +1,12 @@
 #### Семинар 1 
 
-### 1.1 Операторы
+## 1.1 Операторы
 
 Операторы, которые есть в sql, делятся на несколько типов: 
 
 <img src="images/img0_sql_statements.png"  width="800">
 
-### 1.2 Типы данных
+## 1.2 Типы данных
 
 <img src="images/img1_sql_datatypes.png"  width="800">
 
