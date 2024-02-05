@@ -11,7 +11,7 @@
 <img src="images/img1_sql_datatypes.png"  width="800">
 
 это самая краткая таблица, так как существуют другие разннобразные типы данных, например, для представления сетевых адресов IPv4, IPv6 или XML-диаграмм. 
-Самый обширный список можно найти в документации (https://www.postgresql.org/docs/current/datatype.html). Здесь, рекомендуется уделить внимание видам хранения даты/времени: https://www.postgresql.org/docs/current/datatype-datetime.html.
+Самый обширный список можно найти в [документации](https://www.postgresql.org/docs/current/datatype.html). Здесь, рекомендуется уделить внимание видам хранения [даты/времени](https://www.postgresql.org/docs/current/datatype-datetime.html).
 
 ## 2.1 **Data Defenition Language **
 
