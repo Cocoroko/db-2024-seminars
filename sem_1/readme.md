@@ -44,7 +44,7 @@ DROP TABLE [IF EXISTS] table_name;
 TRUNCATE TABLE table_name;
 ```
 
-Отличия DROP от DELETE:
+Основные отличия DROP от DELETE:*
 * DROP удаляет саму таблицу, в то время, как TRUNCATE очищает таблицу от данных, но сам "каркас" таблицы остается жить.
 * DELETE позволяет использовать условия WHERE которых вы можете указать в каких случаях необходимо произвести удаления, а TRUNICATE вам этого сделать не позволит, WHERE в ней нет.
 * DELETE - медленнее, TRUNICATE - быстрее (заметно будет при больших объёмах данных)
@@ -53,7 +53,7 @@ TRUNCATE TABLE table_name;
 * вызов DELETE может активировать триггеры,  а TRUNICATE нет
 * DELETE блокирует удаляемую строку (строки) TRUNICATE - блокирует таблицу.
 
-**Операторы манипуляции данными (Data Manipulation Language):**
+## ** 2.2 Data Manipulation Language **
 
 1. `SELECT` – выбирает данные, удовлетворяющие заданным условиям
 2. `INSERT` – добавляет новые данные
@@ -109,3 +109,54 @@ FROM table_reference_comma_list -- список таблиц
 * `avg()` - среднее всех выбранных значений поля
 
 примечание: COUNT(*) — специальная форма функции COUNT, которая возвращает количество всех строк в указанной таблице. Обратите внимание: COUNT(*) считает дубликат и NULL.
+
+#### 1.4 Полезные функции
+
+Иногда бывает полезно использовать в запросе специальные функции:
+* `IN` - принадлежность определенному набору значений:
+`X IN (a1, a2, ..., an)` <span>&#8803;</span> X = a<sub>1</sub> or X = a<sub>2</sub> or ... or X = a<sub>n</sub>
+* `BETWEEN` - принадлежность определенному интервалу значений:
+`X BETWEEN A AND B` <span>&#8803;</span> (X >= A and X <= B) or (X <= A and X >= B)
+* `LIKE` - удовлетворение текста паттерну: `X LIKE '0%abc_0'`, где `_` - ровно 1 символ, а `%` - любая последовательность символов (в том числе нулевой длины).
+* `SIMILAR TO` - удовлетворение текста регулярному выражению SQL (похожи на POSIX): `'abc' SIMILAR TO '%(b|d)%'`
+* `IF ... THEN ... [ELSIF ... THEN ... ELSE ...] END IF` - ветвления, **пример**:
+```postgresql
+SELECT
+    IF number = 0 THEN
+        'zero'
+    ELSIF number > 0 THEN
+        'positive'
+    ELSIF number < 0 THEN
+        'negative'
+    ELSE
+        'NULL'
+    END IF AS number_class
+FROM
+    numbers
+```
+* `CASE [...] WHEN ... THEN ... ELSE ... END CASE` - еще один аналог ветвлений, **пример**:
+```postgresql
+SELECT
+    CASE 
+        WHEN number = 0 THEN
+            'zero'
+        WHEN number > 0 THEN
+            'positive'
+        WHEN number < 0 THEN
+            'negative'
+        ELSE
+            'NULL'
+    END CASE AS number_class
+FROM
+    numbers
+```
+* `DISTINCT ON` - исключает строки, совпадающие по всем указанным выражениям, **пример**:
+```postgresql
+-- вывести кол-во уникальных отделов
+SELECT
+    count(DISTINCT ON department_nm)
+FROM
+    salary;
+```
+* [Еще немного полезностей](https://postgrespro.ru/docs/postgresql/9.5/functions-conditional)
+
