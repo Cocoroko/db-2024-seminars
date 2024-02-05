@@ -12,4 +12,4 @@
     * `RIGHT (OUTER) JOIN` - все строки "правой" таблицы попадают в итоговую выборку 
     * `FULL (OUTER) JOIN` - все строки обеих таблиц попадают в итоговую выборку
 
-<img src="images/"  width="500">
+<img src="images/Types-of-Join-inSQL.jpg"  width="500">
