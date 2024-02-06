@@ -80,7 +80,7 @@ FROM seminar_3_2.characters;
 -- 9. Попробуйте добавить в таблицу:
 SELECT *
 FROM seminar_3_2.cast;
-    -- строку с actor_id, который не встречается в таблице seminar_4.cast;
+    -- строку с actor_id, который не встречается в таблице seminar_3_2.cast;
     INSERT INTO seminar_3_2.characters (name, actor_id, comment, sex) VALUES ('Есения Лушко', 8, '', 'female');
     -- не добавится
 
