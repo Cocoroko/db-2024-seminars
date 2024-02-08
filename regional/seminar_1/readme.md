@@ -18,7 +18,7 @@
 * Присоединиться к каналу курса - https://t.me/+zaj2bjabvjY4ZjAy
 * Присоединиться к чату курса - https://t.me/+pRbdWjkKcgRlZTFi
 * Присоединиться к серверу Discord - [ссылка будет позже]
-* Создать аккаунт на github.com, создать репозиторий для проекта и добавить своего семинариста в коллабораторы. Инструкция по [ссылке](https://docs.google.com/document/d/1_RIOUFvfOcFn89C4xZOQi1nVGz5jpV5fxFVbAkWCaAw/edit)
+* Создать аккаунт на github.com, создать репозиторий для проекта и добавить своего семинариста в коллабораторы. Инструкция по [ссылке](https://docs.google.com/document/d/1_RIOUFvfOcFn89C4xZOQi1nVGz5jpV5fxFVbAkWCaAw/edit?usp=sharing)
 
 ### Установка необходимого ПО
 
