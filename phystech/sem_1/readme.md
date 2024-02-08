@@ -5,8 +5,7 @@
 * [Страница курса на wiki со всеми полезными ссылками](http://wiki.atp-fivt.org/index.php/%D0%91%D0%B0%D0%B7%D1%8B_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_2024)
 * [Ссылка на семинарский чат групп 201-202](https://t.me/+h75siRfffAZkNmRi)
 * [Прошлогодняя подробная инструкция по настройке ПО](https://gitlab.atp-fivt.org/courses-public/db2023-supplementary/global/-/tree/main/practice/docker/quickstart)(рекомндуемый вариант) и инструкция [этого года](https://docs.google.com/document/d/1CG6-s5-x1LU3j8mOa66rSC4WcrWbc36_/edit#heading=h.gjdgxs)
-  \textit{При возникновении трудностей при установке ПО на Windows можно перейти в данном репозитории в /regional/sem_1 и найти там дополнение к инструкции по установке софта на Windows}
-
+  
 
 ## 1.1 Операторы
 
