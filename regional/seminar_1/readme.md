@@ -18,6 +18,7 @@
 * Присоединиться к каналу курса - https://t.me/+zaj2bjabvjY4ZjAy
 * Присоединиться к чату курса - https://t.me/+pRbdWjkKcgRlZTFi
 * Присоединиться к серверу Discord - [ссылка будет позже]
+* Создать аккаунт на github.com, создать репозиторий для проекта и добавить своего семинариста в коллабораторы. Инструкция по [ссылке](https://docs.google.com/document/d/1_RIOUFvfOcFn89C4xZOQi1nVGz5jpV5fxFVbAkWCaAw/edit)
 
 ### Установка необходимого ПО
 
@@ -31,6 +32,17 @@
 
 После установки всего софта можно написать первую программу. 
 
+Создадим простейшую одноколоночную таблицу, заполним ее тестовыми данными и выведем содержимное.
 
+``` sql
+
+create table if not exists my_first_table (
+    my_data varchar(15)
+);
+
+INSERT INTO my_first_table.my_data VALUES ('Hello World!');
+
+select * from my_first_table;
+```
 
 
