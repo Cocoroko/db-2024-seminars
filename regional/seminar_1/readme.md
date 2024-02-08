@@ -40,7 +40,7 @@ create table if not exists my_first_table (
     my_data varchar(15)
 );
 
-INSERT INTO my_first_table.my_data VALUES ('Hello World!');
+INSERT INTO my_first_table VALUES ('Hello World!');
 
 select * from my_first_table;
 ```
