@@ -144,6 +144,11 @@ SELECT
 FROM
     salary;
 ```
+
+### Практика 
+
+
+
 * [Еще немного полезностей](https://postgrespro.ru/docs/postgresql/9.5/functions-conditional)
 
 
