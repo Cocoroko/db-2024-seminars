@@ -1,4 +1,4 @@
-#### Семинар 1 (Операторы, типы данных, базовый синтаксис)
+## Семинар 1 (Введение, операторы, типы данных, базовый синтаксис)
 
 ### Организационные ссылки
 
@@ -6,21 +6,22 @@
 * [Ссылка на семинарский чат групп 201-202](https://t.me/+h75siRfffAZkNmRi)
 * [Прошлогодняя подробная инструкция по настройке ПО](https://gitlab.atp-fivt.org/courses-public/db2023-supplementary/global/-/tree/main/practice/docker/quickstart)(рекомндуемый вариант) и инструкция [этого года](https://docs.google.com/document/d/1CG6-s5-x1LU3j8mOa66rSC4WcrWbc36_/edit#heading=h.gjdgxs)
   
+### Что такое SQL?
 
-## 1.1 Операторы
-
-Операторы, которые есть в sql, делятся на несколько типов: 
+SQL - Structured Query Language.
+Декларативный язык программирования, применяемый для создания, модификации и управления данными в реляционной базе данных, управляемой соответствующей системой управления базами данных.
+### Операторы
 
 <img src="images/img0_sql_statements.png"  width="800">
 
-## 1.2 Типы данных
+### Типы данных
 
 <img src="images/img1_sql_datatypes.png"  width="800">
 
-это самая краткая таблица, так как существуют другие разннобразные типы данных, например, для представления сетевых адресов IPv4, IPv6 или XML-диаграмм. 
-Самый обширный список можно найти в [документации](https://www.postgresql.org/docs/current/datatype.html). Здесь, рекомендуется уделить внимание видам хранения [даты/времени](https://www.postgresql.org/docs/current/datatype-datetime.html).
+существуют и другие разннобразные типы данных, например, для представления сетевых адресов IPv4, IPv6 или XML-диаграмм. 
+Самый обширный список можно найти в [документации](https://www.postgresql.org/docs/current/datatype.html). Рекомендуется уделить внимание видам хранения [даты/времени](https://www.postgresql.org/docs/current/datatype-datetime.html).
 
-## 2.1 **Data Defenition Language **
+### Data Defenition Language
 
 1. `CREATE` – создание объектов БД
 ```sql
@@ -60,7 +61,7 @@ TRUNCATE TABLE table_name;
 * вызов DELETE может активировать триггеры,  а TRUNICATE нет
 * DELETE блокирует удаляемую строку (строки) TRUNICATE - блокирует таблицу.
 
-## ** 2.2 Data Manipulation Language **
+### Data Manipulation Language
 
 1. `SELECT` – выбирает данные, удовлетворяющие заданным условиям
 2. `INSERT` – добавляет новые данные
@@ -82,7 +83,7 @@ DELETE
 [WHERE conditional_expression];
 ```
 
-### 3.1 Структура запроса
+### Структура запроса
 
 Порядок написания запроса:
 
