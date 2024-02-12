@@ -105,38 +105,10 @@ FROM table_reference_comma_list -- список таблиц
 `X BETWEEN A AND B` <span>&#8803;</span> (X >= A and X <= B) or (X <= A and X >= B)
 * `LIKE` - удовлетворение текста паттерну: `X LIKE '0%abc_0'`, где `_` - ровно 1 символ, а `%` - любая последовательность символов (в том числе нулевой длины).
 * `SIMILAR TO` - удовлетворение текста регулярному выражению SQL (похожи на POSIX): `'abc' SIMILAR TO '%(b|d)%'`
-* `IF ... THEN ... [ELSIF ... THEN ... ELSE ...] END IF` - ветвления, **пример**:
-```postgresql
-SELECT
-    IF number = 0 THEN
-        'zero'
-    ELSIF number > 0 THEN
-        'positive'
-    ELSIF number < 0 THEN
-        'negative'
-    ELSE
-        'NULL'
-    END IF AS number_class
-FROM
-    numbers
-```
-* `CASE [...] WHEN ... THEN ... ELSE ... END CASE` - еще один аналог ветвлений, **пример**:
-```postgresql
-SELECT
-    CASE 
-        WHEN number = 0 THEN
-            'zero'
-        WHEN number > 0 THEN
-            'positive'
-        WHEN number < 0 THEN
-            'negative'
-        ELSE
-            'NULL'
-    END CASE AS number_class
-FROM
-    numbers
+
 ```
 * `DISTINCT ON` - исключает строки, совпадающие по всем указанным выражениям, **пример**:
+
 ```postgresql
 -- вывести кол-во уникальных отделов
 SELECT
